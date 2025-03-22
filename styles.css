@@ -8,3 +8,28 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+p {
+    background-color: #cccc;
+    padding: 0.5em;
+    border: 2px solid black;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+section button {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-weight:bold;
+    border-radius: 7px;
+    padding: 0.25em;
+    align-items: center;
+    margin: 0.5em;
+
+}
+
+button::first-letter {
+    font-size: 125%;
+}
