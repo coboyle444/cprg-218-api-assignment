@@ -6,6 +6,6 @@ fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
         joke.textContent = data.joke
     }
     else if (data.type === "twopart") {
-        joke.textContent = data.setup + "..." + data.delivery;
+        joke.textContent = data.setup + "  ...  " + data.delivery;
     }
 });
