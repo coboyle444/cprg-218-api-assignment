@@ -1,3 +1,5 @@
+document.getElementById("title").textContent = "Joke of the Day";
+
 fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
 .then(response => response.json ())
 .then(data => {
@@ -10,4 +12,4 @@ fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
     }
 });
 
-title.textcontent = "Joke of the Day";
+
