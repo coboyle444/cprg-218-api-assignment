@@ -2,11 +2,23 @@
     box-sizing: border-box;
 }
 
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: "Open Sans", system-ui;
+}
+
+h1 {
+    text-shadow: 2px 2px 3px darkslategrey;
+    font-family: "Chewy", system-ui;
 }
 
 p {
@@ -15,6 +27,7 @@ p {
 
 h2 {
     font-size: 100%;
+    text-shadow: 2px 2px 3px #cccccc;
 }
 
 section button {

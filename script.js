@@ -5,6 +5,7 @@ joke.style.borderColor = "#000000";
 joke.style.borderStyle = "solid";
 
 categoryTitle.textContent = "😹 Joke of the Day";
+joke.textContent = "Patience is key...";
 
 fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
 .then(response => response.json ())
