@@ -1,4 +1,4 @@
-const categoryTitle = document.getElementById(('title'))
+const categoryTitle = document.getElementById(('title'));
 const joke = document.getElementById("joke");
 joke.style.backgroundColor = "#cccc";
 joke.style.borderColor = "#000000";
@@ -12,7 +12,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
 .then(data => {
     console.log(data);
     if(data.type === "single") {
-        joke.textContent = data.joke
+        joke.textContent = data.joke;
     }
     else if (data.type === "twopart") {
         joke.textContent = data.setup + "  ...  " + data.delivery;
@@ -21,7 +21,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
 
 programming.addEventListener('click', function () {
     console.log("program joke!");
-    categoryTitle.textContent = "A Random Programming Joke 💻"
+    categoryTitle.textContent = "A Random Programming Joke 💻";
     joke.style.backgroundColor = "#7393B3";
     joke.style.borderColor = "#0047AB";
     fetch('https://v2.jokeapi.dev/joke/Programming?safe-mode')
@@ -29,17 +29,17 @@ programming.addEventListener('click', function () {
     .then(data => {
         console.log(data);
         if(data.type === "single"){
-            joke.textContent = data.joke
+            joke.textContent = data.joke;
         }
         else {
             joke.textContent = data.setup + " ... " + data.delivery;
         }
-    })
+    });
 });
 
 misc.addEventListener('click', function () {
     console.log("miscellaneous joke!");
-    categoryTitle.textContent = "A Random Miscellaneous Joke 😄"
+    categoryTitle.textContent = "A Random Miscellaneous Joke 😄";
     joke.style.backgroundColor = "#FFFF8F";
     joke.style.borderColor = "#FFBF00";
     fetch('https://v2.jokeapi.dev/joke/Miscellaneous?safe-mode')
@@ -47,12 +47,12 @@ misc.addEventListener('click', function () {
     .then(data => {
         console.log(data);
         if(data.type === "single"){
-            joke.textContent = data.joke
+            joke.textContent = data.joke;
         }
         else {
             joke.textContent = data.setup + " ... " + data.delivery;
         }
-    })
+    });
 });
 
 pun.addEventListener('click', function () {
@@ -65,12 +65,12 @@ pun.addEventListener('click', function () {
     .then(data => {
         console.log(data);
         if(data.type === "single"){
-            joke.textContent = data.joke
+            joke.textContent = data.joke;
         }
         else {
             joke.textContent = data.setup + " ... " + data.delivery;
         }
-    })
+    });
 });
 
 christmas.addEventListener('click', function () {
@@ -83,28 +83,28 @@ christmas.addEventListener('click', function () {
     .then(data => {
         console.log(data);
         if(data.type === "single"){
-            joke.textContent = data.joke
+            joke.textContent = data.joke;
         }
         else {
             joke.textContent = data.setup + " ... " + data.delivery;
         }
-    })
+    });
 });
 
 spooky.addEventListener('click', function () {
     console.log("spooky joke! oooOOOoo!");
     categoryTitle.textContent = "A Random Spooky Joke 👻";
     joke.style.backgroundColor = "#FAC898";
-    joke.style.bordercolor = "#000000";
+    joke.style.borderColor = "#000000";
     fetch('https://v2.jokeapi.dev/joke/Spooky?safe-mode')
     .then(response => response.json ())
     .then(data => {
         console.log(data);
         if(data.type === "single"){
-            joke.textContent = data.joke
+            joke.textContent = data.joke;
         }
         else {
             joke.textContent = data.setup + " ... " + data.delivery;
         }
-    })
+    });
 });
