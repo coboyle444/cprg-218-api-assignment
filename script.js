@@ -9,3 +9,5 @@ fetch('https://v2.jokeapi.dev/joke/Any?safe-mode')
         joke.textContent = data.setup + "  ...  " + data.delivery;
     }
 });
+
+title.textcontent = "Joke of the Day";
