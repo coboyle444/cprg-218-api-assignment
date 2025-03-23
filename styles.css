@@ -14,10 +14,12 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: "Open Sans", system-ui;
+    background-image:radial-gradient(white, rgb(228, 185, 145), rgb(244, 244, 203));
+    background-repeat: no-repeat;
 }
 
 h1 {
-    text-shadow: 2px 2px 3px darkslategrey;
+    text-shadow: 3px 2px 3px rgb(76, 169, 169);
     font-family: "Chewy", system-ui;
 }
 
@@ -28,6 +30,7 @@ p {
 h2 {
     font-size: 100%;
     text-shadow: 2px 2px 3px #cccccc;
+    padding: 1em;
 }
 
 section button {
@@ -35,7 +38,7 @@ section button {
     color: white;
     font-weight:bold;
     border-radius: 7px;
-    padding: 0.25em;
+    padding: 0.4em;
     align-items: center;
     margin: 0.5em;
     cursor: pointer;

@@ -95,6 +95,7 @@ spooky.addEventListener('click', function () {
     console.log("spooky joke! oooOOOoo!");
     categoryTitle.textContent = "A Random Spooky Joke 👻";
     joke.style.backgroundColor = "#FAC898";
+    joke.style.bordercolor = "#000000";
     fetch('https://v2.jokeapi.dev/joke/Spooky?safe-mode')
     .then(response => response.json ())
     .then(data => {
